@@ -1,4 +1,3 @@
-import React from 'react';
 import { Check } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
@@ -36,12 +35,12 @@ export default function Pricing() {
       name: t.pricing.reformerPlans.premium.name,
       price: t.pricing.reformerPlans.premium.price,
       features: t.pricing.reformerPlans.premium.features,
-      popular: true,
     },
     {
       name: t.pricing.reformerPlans.standard.name,
       price: t.pricing.reformerPlans.standard.price,
       features: t.pricing.reformerPlans.standard.features,
+      popular: true,
     },
     {
       name: t.pricing.reformerPlans.basic.name,
@@ -55,12 +54,12 @@ export default function Pricing() {
       name: t.pricing.unlimitedPlans.premium.name,
       price: t.pricing.unlimitedPlans.premium.price,
       features: t.pricing.unlimitedPlans.premium.features,
-      popular: true,
     },
     {
       name: t.pricing.unlimitedPlans.standard.name,
       price: t.pricing.unlimitedPlans.standard.price,
       features: t.pricing.unlimitedPlans.standard.features,
+      popular: true,
     },
     {
       name: t.pricing.unlimitedPlans.basic.name,

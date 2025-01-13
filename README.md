@@ -51,10 +51,8 @@ To run this project locally:
 ├── 📁 public            # Static assets
 ├── 📁 src
 │   ├── 📁 components   # Reusable React components
-│   ├── 📁 pages        # Page-level components
-│   ├── 📁 styles       # Global CSS file
+│   ├── 📁 context      # Context 
 │   ├── 📁 translations # JSON files for localization (en, el)
-│   ├── 📁 hooks        # Custom hooks
 │   ├── 📄 main.jsx     # App entry point
 │   └── 📄 App.jsx      # Root component
 ├── 📄 package.json     # Dependencies and scripts
