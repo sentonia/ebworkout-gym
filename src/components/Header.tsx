@@ -20,7 +20,7 @@ export default function Header() {
             className="flex items-center space-x-2 hover:text-yellow-500 transition-colors"
           >
             <Dumbbell className="w-8 h-8 text-yellow-500" />
-            <span className="text-2xl font-bold">EB-Workout Corner</span>
+            <span className="text-2xl font-bold">EB-Workout</span>
           </button>
           <div className="hidden md:flex space-x-8">
             <a
