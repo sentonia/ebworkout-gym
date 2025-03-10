@@ -15,7 +15,7 @@ export default function Hero() {
     <div className="relative h-screen">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80"
+          src="/hero.png"
           alt="Gym"
           className="w-full h-full object-cover"
         />

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 
@@ -11,37 +10,37 @@ export default function Programs() {
       name: t.programs.items.crossTraining.name,
       description: t.programs.items.crossTraining.description,
       image:
-        'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80',
+        '/crossTraining-programms.png',
     },
     {
       name: t.programs.items.pilates.name,
       description: t.programs.items.pilates.description,
       image:
-        'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80',
+        '/pilates-programms.png',
     },
     {
       name: t.programs.items.trx.name,
       description: t.programs.items.trx.description,
       image:
-        'https://images.unsplash.com/photo-1616279969856-759f316a5ac1?auto=format&fit=crop&q=80',
+        '/trx-programms.png',
     },
     {
       name: t.programs.items.reformer.name,
       description: t.programs.items.reformer.description,
       image:
-        'https://images.unsplash.com/photo-1717500252573-d31d4bf5ddf1?auto=format&fit=crop&q=80',
+        '/reformer-programms.png',
     },
     {
       name: t.programs.items.bodyweight.name,
       description: t.programs.items.bodyweight.description,
       image:
-        'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&q=80',
+        '/bodyweight-programms.png',
     },
     {
       name: t.programs.items.kids.name,
       description: t.programs.items.kids.description,
       image:
-        'https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&q=80',
+        '/kids-programms.png',
     },
   ];
 

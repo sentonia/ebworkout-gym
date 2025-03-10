@@ -1,8 +1,6 @@
-import React from 'react';
 import {
   Facebook,
   Instagram,
-  Twitter,
   Mail,
   Phone,
   MapPin,
@@ -58,7 +56,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} EB Workout. All rights reserved.
+            &copy; {new Date().getFullYear()} EB Workout. All rights reserved. Developed by TK
           </p>
         </div>
       </div>
