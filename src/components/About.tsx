@@ -1,4 +1,3 @@
-import React from 'react';
 import { Target, Users, Gauge } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';

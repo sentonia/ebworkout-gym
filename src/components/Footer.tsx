@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12">
+    <footer id="footer" className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -56,10 +56,15 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} EB Workout. All rights reserved. Developed by TK
+            &copy; {new Date().getFullYear()} EB Workout. All rights reserved. Developed and designed by <a
+              href="https://toniakonsolaki.me"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-500"
+          >TK</a>.
           </p>
         </div>
       </div>
     </footer>
-  );
+);
 }

@@ -6,6 +6,16 @@ export default function Pricing() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const scrollToFooter = () => {
+    const footerSection = document.getElementById('footer');
+    if (footerSection) {
+      footerSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.warn('Footer section not found');
+    }
+  };
+
+
   const plans = [
     {
       name: t.pricing.plans.basic.name,
@@ -100,6 +110,7 @@ export default function Pricing() {
         </ul>
       </div>
       <button
+          onClick={scrollToFooter}
         className={`w-full py-2 rounded-full font-semibold text-sm ${
           plan.popular
             ? 'bg-yellow-500 text-black hover:bg-yellow-400'
