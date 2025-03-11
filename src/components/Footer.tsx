@@ -60,8 +60,7 @@ export default function Footer() {
               href="https://toniakonsolaki.me"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-yellow-500"
-          >TK</a>.
+          >TK.</a>
           </p>
         </div>
       </div>
