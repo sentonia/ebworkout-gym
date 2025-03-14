@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import heroImage from "/hero.webp";
 
 export default function Hero() {
   const { language } = useLanguage();
@@ -15,8 +16,9 @@ export default function Hero() {
     <div className="relative h-screen">
       <div className="absolute inset-0">
         <img
-          src="/hero.png"
+          src={heroImage}
           alt="Gym"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>

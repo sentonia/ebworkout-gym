@@ -23,6 +23,7 @@ const translatedProgramms = programs(t)
               <img
                 src={program.image}
                 alt={program.name}
+                loading={"lazy"}
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">

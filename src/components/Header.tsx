@@ -2,15 +2,15 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { FaDumbbell } from "react-icons/fa";
+import {useCallback} from "react";
 
 export default function Header() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
+  }, []);
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="container mx-auto px-4 py-4">

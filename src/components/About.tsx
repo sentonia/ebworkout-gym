@@ -1,12 +1,13 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import {features} from "../constants/about.constants.tsx";
+import {useMemo} from "react";
 
 export default function About() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const translatedFeatures = features(t)
+  const translatedFeatures = useMemo(() => features(t), [t]);
 
   return (
     <section id="about" className="py-20 bg-white">

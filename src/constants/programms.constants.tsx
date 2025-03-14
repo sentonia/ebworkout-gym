@@ -1,3 +1,11 @@
+import crossTrainingProgramms from '/crossTraining-programms.webp';
+import pilatesProgramms from '/pilates-programms.webp';
+import trxProgramms from '/trx-programms.webp';
+import reformerProgramms from '/reformer-programms.webp';
+import bodyWeightProgramms from '/bodyweight-programms.webp';
+import kidsProgramms from '/kids-programms.webp';
+
+
 type Translation = {
     programs: {
         items: {
@@ -15,37 +23,31 @@ export const programs = (t: Translation)  => [
     {
         name: t.programs.items.crossTraining.name,
         description: t.programs.items.crossTraining.description,
-        image:
-            '/crossTraining-programms.png',
+        image: crossTrainingProgramms,
     },
     {
         name: t.programs.items.pilates.name,
         description: t.programs.items.pilates.description,
-        image:
-            '/pilates-programms.png',
+        image:pilatesProgramms,
     },
     {
         name: t.programs.items.trx.name,
         description: t.programs.items.trx.description,
-        image:
-            '/trx-programms.png',
+        image:trxProgramms,
     },
     {
         name: t.programs.items.reformer.name,
         description: t.programs.items.reformer.description,
-        image:
-            '/reformer-programms.png',
+        image:reformerProgramms,
     },
     {
         name: t.programs.items.bodyweight.name,
         description: t.programs.items.bodyweight.description,
-        image:
-            '/bodyweight-programms.png',
+        image:bodyWeightProgramms
     },
     {
         name: t.programs.items.kids.name,
         description: t.programs.items.kids.description,
-        image:
-            '/kids-programms.png',
+        image: kidsProgramms
     },
 ];

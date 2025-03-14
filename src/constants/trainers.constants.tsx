@@ -1,3 +1,6 @@
+import eirini from "/eirini.webp";
+import spiros from "/spiros.webp";
+
 type Translation = {
     trainers: {
         specialists: {
@@ -12,14 +15,12 @@ export const trainers =(t: Translation) => [
     {
         name: 'Eirini',
         specialty: t.trainers.specialists.cross,
-        image:
-            '/eirini.png',
+        image:eirini,
     },
     {
         name: 'Spiros',
         specialty: t.trainers.specialists.functional,
-        image:
-            '/spiros.png',
+        image:spiros
     },
     {
         name: 'Moschoula',
