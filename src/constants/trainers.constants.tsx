@@ -1,5 +1,7 @@
-import eirini from "/eirini.webp";
+import eirini from "/eirini_new.webp";
 import spiros from "/spiros.webp";
+import moschoula from "/moschoula.webp";
+import nikoletta from "/nikoletta.webp"
 
 type Translation = {
     trainers: {
@@ -25,13 +27,11 @@ export const trainers =(t: Translation) => [
     {
         name: 'Moschoula',
         specialty: t.trainers.specialists.pilates,
-        image:
-            'https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&q=80',
+        image: moschoula
     },
     {
         name: 'Nikoleta',
         specialty: t.trainers.specialists.pilates,
-        image:
-            'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80',
+        image: nikoletta
     },
 ];

@@ -25,12 +25,12 @@ const translatedTrainers = trainers(t)
                 alt={trainer.name}
                 className="w-full h-80 object-cover transition-transform group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent flex items-end p-6">
                 <div>
                   <h3 className="text-xl font-semibold text-white">
                     {trainer.name}
                   </h3>
-                  <p className="text-yellow-500">{trainer.specialty}</p>
+                  <p className="text-yellow-500 backdrop-blur ">{trainer.specialty}</p>
                 </div>
               </div>
             </div>

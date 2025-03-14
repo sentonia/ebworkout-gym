@@ -1,8 +1,9 @@
 import { FaCheck } from "react-icons/fa6";
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
-import { useCallback, memo } from 'react';
+import {useCallback, memo, useMemo} from 'react';
 import { plans, unlimitedPlans, reformerPlans } from '../constants/pricing.constants.tsx';
+import {debounce} from "../utils.tsx";
 
 type Plan = {
   name: string;
@@ -14,20 +15,22 @@ type Plan = {
 
 export default function Pricing() {
   const { language } = useLanguage();
-  const t = translations[language];
+  const t = useMemo(() => translations[language], [language]);
 
-  const scrollToFooter = useCallback(() => {
-    const footerSection = document.getElementById('footer');
-    if (footerSection) {
-      footerSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      console.warn('Footer section not found');
-    }
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const scrollToFooter = useCallback(
+      debounce(() => {
+        const footerSection = document.getElementById("footer");
+        if (footerSection) {
+          footerSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300),
+      []
+  );
 
-  const translatedPlans = plans(t)
-  const translatedUnlimitedPlans = unlimitedPlans(t)
-  const translatedReformerPlans = reformerPlans(t)
+  const translatedPlans = useMemo(() => plans(t), [t]);
+  const translatedUnlimitedPlans = useMemo(() => unlimitedPlans(t), [t]);
+  const translatedReformerPlans = useMemo(() => reformerPlans(t), [t]);
 
   const PricingCard = memo(({ plan, isReformer = false }: { plan: Plan; isReformer?: boolean }) => (
       <div
