@@ -1,48 +1,12 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import {programs} from "../constants/programms.constants.tsx";
 
 export default function Programs() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const programs = [
-    {
-      name: t.programs.items.crossTraining.name,
-      description: t.programs.items.crossTraining.description,
-      image:
-        '/crossTraining-programms.png',
-    },
-    {
-      name: t.programs.items.pilates.name,
-      description: t.programs.items.pilates.description,
-      image:
-        '/pilates-programms.png',
-    },
-    {
-      name: t.programs.items.trx.name,
-      description: t.programs.items.trx.description,
-      image:
-        '/trx-programms.png',
-    },
-    {
-      name: t.programs.items.reformer.name,
-      description: t.programs.items.reformer.description,
-      image:
-        '/reformer-programms.png',
-    },
-    {
-      name: t.programs.items.bodyweight.name,
-      description: t.programs.items.bodyweight.description,
-      image:
-        '/bodyweight-programms.png',
-    },
-    {
-      name: t.programs.items.kids.name,
-      description: t.programs.items.kids.description,
-      image:
-        '/kids-programms.png',
-    },
-  ];
+const translatedProgramms = programs(t)
 
   return (
     <section id="programs" className="py-20 bg-gray-50">
@@ -51,7 +15,7 @@ export default function Programs() {
           {t.programs.title}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {programs.map((program, index) => (
+          {translatedProgramms.map((program, index) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"

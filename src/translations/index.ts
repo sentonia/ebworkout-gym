@@ -153,6 +153,15 @@ export const translations = {
         },
       },
     },
+    footer: {
+        about: {
+            description:
+            'Transform your body, transform your life. Join our community of fitness enthusiasts.',
+            social: 'Find us on our social media:',
+        },
+        contact: {
+            title: 'Contact',
+    }}
   },
   el: {
     nav: {
@@ -311,5 +320,15 @@ export const translations = {
         },
       },
     },
+    footer: {
+      about: {
+        description:
+          'Μεταμορφώστε το σώμα σας, μεταμορφώστε τη ζωή σας. Γίνετε μέλος της κοινότητάς μας με λάτρεις της φυσικής κατάστασης.',
+        social: 'Βρείτε μας στα social media:',
+      },
+      contact:{
+        title: 'Επικοινωνία',
+      }
+    }
   },
 };

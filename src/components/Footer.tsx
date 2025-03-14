@@ -1,12 +1,13 @@
-import {
-  Facebook,
-  Instagram,
-  Mail,
-  Phone,
-  MapPin,
-} from 'lucide-react';
+import { FaFacebookSquare,FaInstagram,FaPhoneAlt   } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { LuMapPin } from "react-icons/lu";
+import {useLanguage} from "../context/LanguageContext.tsx";
+import {translations} from "../translations";
 
 export default function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <footer id="footer" className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
@@ -14,41 +15,43 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">EB Workout</h3>
             <p className="text-gray-400">
-              Transform your body, transform your life. Join our community of
-              fitness enthusiasts.
+              {t.footer.about.description}
             </p>
             <div className="flex space-x-4 mt-4">
+              <p className="text-gray-400">
+                {t.footer.about.social}
+              </p>
               <a
-                href="https://www.facebook.com/p/E-B-Workout-Corner-100063663878448/?locale=el_GR"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-yellow-500 hover:text-yellow-400 transition-colors"
+                  href="https://www.facebook.com/p/E-B-Workout-Corner-100063663878448/?locale=el_GR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-500 hover:text-yellow-400 transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <FaFacebookSquare className="w-5 h-5"/>
               </a>
               <a
-                href="https://www.instagram.com/ebworkoutcorner/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-yellow-500 hover:text-yellow-400 transition-colors"
+                  href="https://www.instagram.com/ebworkoutcorner/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-500 hover:text-yellow-400 transition-colors"
               >
-                <Instagram className="w-5 h-5" />
+                <FaInstagram className="w-5 h-5"/>
               </a>
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact</h3>
+            <h3 className="text-xl font-bold mb-4"> {t.footer.contact.title}</h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <Mail className="w-5 h-5 text-yellow-500" />
+                <IoIosMail className="w-5 h-5 text-yellow-500" />
                 <span>info@ebworkout.com</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="w-5 h-5 text-yellow-500" />
+                <FaPhoneAlt className="w-5 h-5 text-yellow-500" />
                 <span>+30 6946474589</span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="w-5 h-5 text-yellow-500" />
+                <LuMapPin className="w-5 h-5 text-yellow-500" />
                 <span>Καπετάν Χρονά 17-19, Αθήνα 115 25</span>
               </div>
             </div>
@@ -60,7 +63,8 @@ export default function Footer() {
               href="https://toniakonsolaki.me"
               target="_blank"
               rel="noopener noreferrer"
-          >TK.</a>
+              className={"font-bold text-yellow-500 hover:text-yellow-400 transition-colors"}
+          >{"<tk/>."}</a>
           </p>
         </div>
       </div>

@@ -1,36 +1,12 @@
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import {trainers} from "../constants/trainers.constants.tsx";
 
 export default function Trainers() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const trainers = [
-    {
-      name: 'Eirini',
-      specialty: t.trainers.specialists.cross,
-      image:
-        '/eirini.png',
-    },
-    {
-      name: 'Spiros',
-      specialty: t.trainers.specialists.functional,
-      image:
-        '/spiros.png',
-    },
-    {
-      name: 'Moschoula',
-      specialty: t.trainers.specialists.pilates,
-      image:
-        'https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&q=80',
-    },
-    {
-      name: 'Nikoleta',
-      specialty: t.trainers.specialists.pilates,
-      image:
-        'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80',
-    },
-  ];
+const translatedTrainers = trainers(t)
 
   return (
     <section id="trainers" className="py-20 bg-white">
@@ -39,7 +15,7 @@ export default function Trainers() {
           {t.trainers.title}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {trainers.map((trainer, index) => (
+          {translatedTrainers.map((trainer, index) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg"

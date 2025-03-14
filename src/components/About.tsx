@@ -1,28 +1,12 @@
-import { Target, Users, Gauge } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import {features} from "../constants/about.constants.tsx";
 
 export default function About() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const features = [
-    {
-      icon: <Target className="w-8 h-8" />,
-      title: t.about.features.expertGuidance.title,
-      description: t.about.features.expertGuidance.description,
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: t.about.features.community.title,
-      description: t.about.features.community.description,
-    },
-    {
-      icon: <Gauge className="w-8 h-8" />,
-      title: t.about.features.flexibleHours.title,
-      description: t.about.features.flexibleHours.description,
-    },
-  ];
+  const translatedFeatures = features(t)
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -31,7 +15,7 @@ export default function About() {
           {t.about.title}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {translatedFeatures.map((feature, index) => (
             <div
               key={index}
               className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow"

@@ -1,7 +1,7 @@
-import { Dumbbell } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { FaDumbbell } from "react-icons/fa";
 
 export default function Header() {
   const { language } = useLanguage();
@@ -19,7 +19,7 @@ export default function Header() {
             onClick={scrollToTop}
             className="flex items-center space-x-2 hover:text-yellow-500 transition-colors"
           >
-            <Dumbbell className="w-8 h-8 text-yellow-500" />
+            <FaDumbbell  className="w-8 h-8 text-yellow-500" />
             <span className="text-2xl font-bold">EB-Workout</span>
           </button>
           <div className="hidden md:flex space-x-8">
