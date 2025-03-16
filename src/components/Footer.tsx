@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
             &copy; {new Date().getFullYear()} EB Workout. All rights reserved. Developed and designed by <a
-              href="https://toniakonsolaki.me"
+              href="https://toniakonsolaki.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className={"font-bold text-yellow-500 hover:text-yellow-400 transition-colors"}
