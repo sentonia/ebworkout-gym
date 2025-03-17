@@ -65,7 +65,7 @@ export const translations = {
     trainers: {
       title: 'Our Expert Trainers',
       specialists: {
-        cross: 'Cross Training Expert',
+        cross: 'Cross Training Expert, Strength & Conditioning',
         strength: 'Strength & Conditioning',
         pilates: 'Pilates Instructor',
         functional: 'TRX & Bodyweight / Abs Instructor',
@@ -109,8 +109,7 @@ export const translations = {
           price: '300',
           features: [
             '24 Reformer sessions',
-            'Sessions of 2 persons group',
-            'Standard booking',
+            'Sessions of 3 persons group',
           ],
         },
         standard: {
@@ -118,8 +117,7 @@ export const translations = {
           price: '160',
           features: [
             '12 Reformer sessions',
-            'Sessions of 2 persons group',
-            'Standard booking',
+            'Sessions of 3 persons group',
           ],
         },
         basic: {
@@ -127,8 +125,7 @@ export const translations = {
           price: '120',
           features: [
             '8 Reformer sessions',
-            'Sessions of 2 persons group',
-            'Standard booking',
+            'Sessions of 3 persons group',
           ],
         },
       },
@@ -231,9 +228,9 @@ export const translations = {
     trainers: {
       title: 'Οι Εξειδικευμένοι Εκπαιδευτές μας',
       specialists: {
-        cross: 'Ειδικός στο Cross Training',
-        strength: 'Ειδικός στην Ενδυνάμωση και Conditioning',
-        pilates: 'Εκπαιδευτής Pilates',
+        cross: 'Ειδική στο Cross Training, στην Ενδυνάμωση και Conditioning',
+        strength: 'Ειδικός TRX και Προπόνησης με Βάρος Σώματος',
+        pilates: 'Εκπαιδεύτρια Pilates',
         functional: 'Ειδικός TRX και Προπόνησης με Βάρος Σώματος',
       },
     },
@@ -276,8 +273,7 @@ export const translations = {
           price: '300',
           features: [
             '24 συνεδρίες Reformer',
-            'Συνεδρίες σε γκρουπ 2 ατόμων',
-            'Κανονική κράτηση',
+            'Συνεδρίες σε γκρουπ 3 ατόμων',
           ],
         },
         standard: {
@@ -285,8 +281,7 @@ export const translations = {
           price: '160',
           features: [
             '12 συνεδρίες Reformer',
-            'Συνεδρίες σε γκρουπ 2 ατόμων',
-            'Κανονική κράτηση',
+            'Συνεδρίες σε γκρουπ 3 ατόμων',
           ],
         },
         basic: {
@@ -294,8 +289,7 @@ export const translations = {
           price: '120',
           features: [
             '8 συνεδρίες Reformer',
-            'Συνεδρίες σε γκρουπ 2 ατόμων',
-            'Κανονική κράτηση',
+            'Συνεδρίες σε γκρουπ 3 ατόμων',
           ],
         },
       },
