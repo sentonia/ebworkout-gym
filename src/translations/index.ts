@@ -65,10 +65,10 @@ export const translations = {
     trainers: {
       title: 'Our Expert Trainers',
       specialists: {
-        cross: 'Cross Training Expert, Strength & Conditioning',
-        strength: 'Strength & Conditioning',
-        pilates: 'Pilates Instructor',
-        functional: 'TRX & Bodyweight / Abs Instructor',
+        eirini: 'Professor of Physical Education and Sports, Clinical Exercise Physiologist',
+        spiros: 'Professor of Physical Education',
+        nikoletta: 'Certified Physiotherapist',
+        moschoula: 'Pilates and Pilates Reformer Instructor',
       },
     },
     pricing: {
@@ -228,10 +228,10 @@ export const translations = {
     trainers: {
       title: 'Οι Εξειδικευμένοι Εκπαιδευτές μας',
       specialists: {
-        cross: 'Ειδική στο Cross Training, στην Ενδυνάμωση και Conditioning',
-        strength: 'Ειδικός TRX και Προπόνησης με Βάρος Σώματος',
-        pilates: 'Εκπαιδεύτρια Pilates',
-        functional: 'Ειδικός TRX και Προπόνησης με Βάρος Σώματος',
+        eirini: 'Καθηγήτρια Φυσικής Αγωγής και Αθλητισμού, Kλινική Εργοφυσιολόγος',
+        spiros: 'Καθηγητής Φυσικής Αγωγής',
+        nikoletta: 'Πιστοποιημένη Φυσιοθεραπεύτρια',
+        moschoula: 'Εκπαιδεύτρια Pilates και Pilates Reformer',
       },
     },
     pricing: {
