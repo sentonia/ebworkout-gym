@@ -43,16 +43,33 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4"> {t.footer.contact.title}</h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <IoIosMail className="w-5 h-5 text-yellow-500" />
-                <span>info@ebworkout.com</span>
+                <IoIosMail className="w-5 h-5 text-yellow-500"/>
+                <a
+                    href="mailto:ebworkoutcorner@hotmail.com"
+                    className="hover:underline"
+                >
+                  ebworkoutcorner@hotmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-2">
-                <FaPhoneAlt className="w-5 h-5 text-yellow-500" />
-                <span>+30 6946474589</span>
+                <FaPhoneAlt className="w-5 h-5 text-yellow-500"/>
+                <a
+                    href="tel:+306946474589"
+                    className="hover:underline"
+                >
+                  +30 694 647 4589
+                </a>
               </div>
               <div className="flex items-center space-x-2">
-                <LuMapPin className="w-5 h-5 text-yellow-500" />
-                <span>Καπετάν Χρονά 17-19, Αθήνα 115 25</span>
+                <LuMapPin className="w-5 h-5 text-yellow-500"/>
+                <a
+                    href="https://www.google.com/maps/place/E-B+Workout+Corner/@37.9946553,23.7744381,17z/data=!4m6!3m5!1s0x14a198055af0c5d5:0x851b337c1fb3d629!8m2!3d37.99463!4d23.774598!16s%2Fg%2F11c58rl41p?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                >
+                  Καπετάν Χρονά 17-19, Αθήνα 115 25
+                </a>
               </div>
             </div>
           </div>
