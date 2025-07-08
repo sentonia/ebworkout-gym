@@ -1,20 +1,20 @@
 type Translation = {
     pricing: {
         plans: {
-            basic: { name: string; features: string[] };
-            standard: { name: string; features: string[] };
-            premium: { name: string; features: string[] };
-            elite: { name: string; features: string[] };
+            pack8: { name: string; features: string[] };
+            pack12: { name: string; features: string[] };
+            studentPack: { name: string; features: string[] };
+            kidsFitness: { name: string; features: string[] };
         };
         reformerPlans: {
-            premium: { name: string; price: string; features: string[] };
-            standard: { name: string; price: string; features: string[] };
-            basic: { name: string; price: string; features: string[] };
+            pack24: { name: string; price: string; features: string[] };
+            pack12: { name: string; price: string; features: string[] };
+            pack8: { name: string; price: string; features: string[] };
         };
         unlimitedPlans: {
-            premium: { name: string; price: string; features: string[] };
-            standard: { name: string; price: string; features: string[] };
-            basic: { name: string; price: string; features: string[] };
+            unlimited2Months: { name: string; price: string; features: string[] };
+            unlimited3Months: { name: string; price: string; features: string[] };
+            unlimited6Months: { name: string; price: string; features: string[] };
             personal: { name: string; price: string; features: string[] };
         };
     };
@@ -22,67 +22,69 @@ type Translation = {
 
 export const plans = (t: Translation) =>  ([
     {
-        name: t.pricing.plans.basic.name,
+        name: t.pricing.plans.pack8.name,
         price: '65',
-        features: t.pricing.plans.basic.features,
+        features: t.pricing.plans.pack8.features,
     },
     {
-        name: t.pricing.plans.standard.name,
+        name: t.pricing.plans.pack12.name,
         price: '80',
-        features: t.pricing.plans.standard.features,
+        features: t.pricing.plans.pack12.features,
         popular: true,
     },
     {
-        name: t.pricing.plans.premium.name,
+        name: t.pricing.plans.studentPack.name,
         price: '60',
-        features: t.pricing.plans.premium.features,
+        features: t.pricing.plans.studentPack.features,
     },
     {
-        name: t.pricing.plans.elite.name,
+        name: t.pricing.plans.kidsFitness.name,
         price: '35',
-        features: t.pricing.plans.elite.features,
+        features: t.pricing.plans.kidsFitness.features,
     },
 ]);
 
-export const reformerPlans = (t: Translation) => [
-    {
-        name: t.pricing.reformerPlans.premium.name,
-        price: t.pricing.reformerPlans.premium.price,
-        features: t.pricing.reformerPlans.premium.features,
-    },
-    {
-        name: t.pricing.reformerPlans.standard.name,
-        price: t.pricing.reformerPlans.standard.price,
-        features: t.pricing.reformerPlans.standard.features,
-        popular: true,
-    },
-    {
-        name: t.pricing.reformerPlans.basic.name,
-        price: t.pricing.reformerPlans.basic.price,
-        features: t.pricing.reformerPlans.basic.features,
-    },
-];
+
 
 export const unlimitedPlans = (t: Translation) => [
     {
-        name: t.pricing.unlimitedPlans.premium.name,
-        price: t.pricing.unlimitedPlans.premium.price,
-        features: t.pricing.unlimitedPlans.premium.features,
+        name: t.pricing.unlimitedPlans.unlimited2Months.name,
+        price: t.pricing.unlimitedPlans.unlimited2Months.price,
+        features: t.pricing.unlimitedPlans.unlimited2Months.features,
     },
     {
-        name: t.pricing.unlimitedPlans.standard.name,
-        price: t.pricing.unlimitedPlans.standard.price,
-        features: t.pricing.unlimitedPlans.standard.features,
+        name: t.pricing.unlimitedPlans.unlimited3Months.name,
+        price: t.pricing.unlimitedPlans.unlimited3Months.price,
+        features: t.pricing.unlimitedPlans.unlimited3Months.features,
         popular: true,
     },
     {
-        name: t.pricing.unlimitedPlans.basic.name,
-        price: t.pricing.unlimitedPlans.basic.price,
-        features: t.pricing.unlimitedPlans.basic.features,
+        name: t.pricing.unlimitedPlans.unlimited6Months.name,
+        price: t.pricing.unlimitedPlans.unlimited6Months.price,
+        features: t.pricing.unlimitedPlans.unlimited6Months.features,
     },
     {
         name: t.pricing.unlimitedPlans.personal.name,
         price: t.pricing.unlimitedPlans.personal.price,
         features: t.pricing.unlimitedPlans.personal.features,
+    },
+];
+
+export const reformerPlans = (t: Translation) => [
+    {
+        name: t.pricing.reformerPlans.pack24.name,
+        price: t.pricing.reformerPlans.pack24.price,
+        features: t.pricing.reformerPlans.pack24.features,
+    },
+    {
+        name: t.pricing.reformerPlans.pack12.name,
+        price: t.pricing.reformerPlans.pack12.price,
+        features: t.pricing.reformerPlans.pack12.features,
+        popular: true,
+    },
+    {
+        name: t.pricing.reformerPlans.pack8.name,
+        price: t.pricing.reformerPlans.pack8.price,
+        features: t.pricing.reformerPlans.pack8.features,
     },
 ];

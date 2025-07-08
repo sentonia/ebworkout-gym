@@ -100,7 +100,7 @@ export default function Pricing() {
 
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {translatedUnlimitedPlans.map((plan, index) => (
-                <PricingCard key={index} plan={plan} isReformer={false} />
+                <PricingCard key={index} plan={plan} isReformer={true} />
             ))}
           </div>
 

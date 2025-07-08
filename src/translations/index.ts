@@ -80,19 +80,19 @@ export const translations = {
       mostPopular: 'Most Popular',
       perMonth: '/month',
       plans: {
-        basic: {
+        pack8: {
           name: 'Pack 8',
           features: ['8 sessions per month', 'Basic equipment usage'],
         },
-        standard: {
+        pack12: {
           name: 'Pack 12',
           features: ['12 Sessions per month', 'Basic equipment usage'],
         },
-        premium: {
+        studentPack: {
           name: 'Student Pack',
           features: ['Trainings between 9am-6pm', 'Basic equipment usage'],
         },
-        elite: {
+        kidsFitness: {
           name: 'Kids Fitness unlimited',
           features: [
             'Unlimited trainings',
@@ -104,7 +104,7 @@ export const translations = {
       reformerSubtitle:
         'Specialized plans for Pilates Reformer training sessions',
       reformerPlans: {
-        premium: {
+        pack24: {
           name: 'Pack 24',
           price: '310',
           features: [
@@ -112,7 +112,7 @@ export const translations = {
             'Sessions of 3 persons group',
           ],
         },
-        standard: {
+        pack12: {
           name: 'Pack 12',
           price: '170',
           features: [
@@ -120,7 +120,7 @@ export const translations = {
             'Sessions of 3 persons group',
           ],
         },
-        basic: {
+        pack8: {
           name: 'Pack 8',
           price: '130',
           features: [
@@ -133,17 +133,17 @@ export const translations = {
       unlimitedSubtitle:
         'Get unlimited access to specific training programs with our special packages',
       unlimitedPlans: {
-        premium: {
+        unlimited2Months: {
           name: 'Unlimited Group Classes / 2 months ',
           price: '180',
           features: ['2 months Unlimited Cross Training sessions'],
         },
-        standard: {
+        unlimited3Months: {
           name: 'Unlimited Group Classes / 3 months',
           price: '220',
           features: ['3 months Unlimited Cross Training sessions'],
         },
-        basic: {
+        unlimited6Months: {
           name: 'Unlimited Group Classes / 6 months ',
           price: '390',
           features: ['6 months Unlimited Cross Training sessions'],
@@ -249,19 +249,19 @@ export const translations = {
       mostPopular: 'Πιο Δημοφιλές',
       perMonth: '/μήνα',
       plans: {
-        basic: {
+        pack8: {
           name: 'Πακέτο 8',
           features: ['8 συνεδρίες ανά μήνα', 'Χρήση βασικού εξοπλισμού'],
         },
-        standard: {
+        pack12: {
           name: 'Πακέτο 12',
           features: ['12 συνεδρίες ανά μήνα', 'Χρήση βασικού εξοπλισμού'],
         },
-        premium: {
+        studentPack: {
           name: 'Φοιτητικό Πακέτο',
           features: ['Προπονήσεις από 9πμ-6μμ', 'Χρήση βασικού εξοπλισμού'],
         },
-        elite: {
+        kidsFitness: {
           name: 'Απεριόριστη Παιδική Γυμναστική',
           features: [
             'Απεριόριστες προπονήσεις',
@@ -273,7 +273,7 @@ export const translations = {
       reformerSubtitle:
         'Εξειδικευμένα προγράμματα για συνεδρίες Pilates Reformer',
       reformerPlans: {
-        premium: {
+        pack24: {
           name: 'Πακέτο 24',
           price: '310',
           features: [
@@ -281,7 +281,7 @@ export const translations = {
             'Συνεδρίες σε γκρουπ 3 ατόμων',
           ],
         },
-        standard: {
+        pack12: {
           name: 'Πακέτο 12',
           price: '170',
           features: [
@@ -289,7 +289,7 @@ export const translations = {
             'Συνεδρίες σε γκρουπ 3 ατόμων',
           ],
         },
-        basic: {
+        pack8: {
           name: 'Πακέτο 8',
           price: '130',
           features: [
@@ -302,17 +302,17 @@ export const translations = {
       unlimitedSubtitle:
         'Αποκτήστε απεριόριστη πρόσβαση σε συγκεκριμένα προγράμματα με τα ειδικά μας πακέτα',
       unlimitedPlans: {
-        premium: {
+        unlimited2Months: {
           name: 'Απεριόριστα Ομαδικά Μαθήματα / 2 μήνες',
           price: '180',
           features: ['2 μήνες απεριόριστα Cross Training sessions'],
         },
-        standard: {
+        unlimited3Months: {
           name: 'Απεριόριστα Ομαδικά Μαθήματα / 3 μήνες',
           price: '220',
           features: ['3 μήνες απεριόριστα Cross Training sessions'],
         },
-        basic: {
+        unlimited6Months: {
           name: 'Απεριόριστα Ομαδικά Μαθήματα / 6 μήνες',
           price: '390',
           features: ['6 μήνες απεριόριστα Cross Training sessions'],
