@@ -106,7 +106,7 @@ export const translations = {
       reformerPlans: {
         premium: {
           name: 'Pack 24',
-          price: '300',
+          price: '310',
           features: [
             '24 Reformer sessions',
             'Sessions of 3 persons group',
@@ -114,7 +114,7 @@ export const translations = {
         },
         standard: {
           name: 'Pack 12',
-          price: '160',
+          price: '170',
           features: [
             '12 Reformer sessions',
             'Sessions of 3 persons group',
@@ -122,7 +122,7 @@ export const translations = {
         },
         basic: {
           name: 'Pack 8',
-          price: '120',
+          price: '130',
           features: [
             '8 Reformer sessions',
             'Sessions of 3 persons group',
@@ -135,18 +135,23 @@ export const translations = {
       unlimitedPlans: {
         premium: {
           name: 'Unlimited Group Classes / 2 months ',
-          price: '165',
+          price: '180',
           features: ['2 months Unlimited Cross Training sessions'],
         },
         standard: {
           name: 'Unlimited Group Classes / 3 months',
-          price: '200',
+          price: '220',
           features: ['3 months Unlimited Cross Training sessions'],
         },
         basic: {
           name: 'Unlimited Group Classes / 6 months ',
-          price: '370',
+          price: '390',
           features: ['6 months Unlimited Cross Training sessions'],
+        },
+        personal: {
+          name: '10 Personal Training Pack',
+          price: '250',
+          features: ['10 Personal Training Lessons'],
         },
       },
     },
@@ -270,7 +275,7 @@ export const translations = {
       reformerPlans: {
         premium: {
           name: 'Πακέτο 24',
-          price: '300',
+          price: '310',
           features: [
             '24 συνεδρίες Reformer',
             'Συνεδρίες σε γκρουπ 3 ατόμων',
@@ -278,7 +283,7 @@ export const translations = {
         },
         standard: {
           name: 'Πακέτο 12',
-          price: '160',
+          price: '170',
           features: [
             '12 συνεδρίες Reformer',
             'Συνεδρίες σε γκρουπ 3 ατόμων',
@@ -286,7 +291,7 @@ export const translations = {
         },
         basic: {
           name: 'Πακέτο 8',
-          price: '120',
+          price: '130',
           features: [
             '8 συνεδρίες Reformer',
             'Συνεδρίες σε γκρουπ 3 ατόμων',
@@ -299,18 +304,23 @@ export const translations = {
       unlimitedPlans: {
         premium: {
           name: 'Απεριόριστα Ομαδικά Μαθήματα / 2 μήνες',
-          price: '165',
+          price: '180',
           features: ['2 μήνες απεριόριστα Cross Training sessions'],
         },
         standard: {
           name: 'Απεριόριστα Ομαδικά Μαθήματα / 3 μήνες',
-          price: '200',
+          price: '220',
           features: ['3 μήνες απεριόριστα Cross Training sessions'],
         },
         basic: {
           name: 'Απεριόριστα Ομαδικά Μαθήματα / 6 μήνες',
-          price: '370',
+          price: '390',
           features: ['6 μήνες απεριόριστα Cross Training sessions'],
+        },
+        personal: {
+          name: '10 Ατομικά Μαθήματα',
+          price: '250',
+          features: ['10 Ατομικά Μαθήματα'],
         },
       },
     },

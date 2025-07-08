@@ -15,6 +15,7 @@ type Translation = {
             premium: { name: string; price: string; features: string[] };
             standard: { name: string; price: string; features: string[] };
             basic: { name: string; price: string; features: string[] };
+            personal: { name: string; price: string; features: string[] };
         };
     };
 };
@@ -22,18 +23,18 @@ type Translation = {
 export const plans = (t: Translation) =>  ([
     {
         name: t.pricing.plans.basic.name,
-        price: '59',
+        price: '65',
         features: t.pricing.plans.basic.features,
     },
     {
         name: t.pricing.plans.standard.name,
-        price: '75',
+        price: '80',
         features: t.pricing.plans.standard.features,
         popular: true,
     },
     {
         name: t.pricing.plans.premium.name,
-        price: '55',
+        price: '60',
         features: t.pricing.plans.premium.features,
     },
     {
@@ -78,5 +79,10 @@ export const unlimitedPlans = (t: Translation) => [
         name: t.pricing.unlimitedPlans.basic.name,
         price: t.pricing.unlimitedPlans.basic.price,
         features: t.pricing.unlimitedPlans.basic.features,
+    },
+    {
+        name: t.pricing.unlimitedPlans.personal.name,
+        price: t.pricing.unlimitedPlans.personal.price,
+        features: t.pricing.unlimitedPlans.personal.features,
     },
 ];
